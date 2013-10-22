@@ -1,0 +1,1 @@
+This is a project that I'm throwing ideas into for a possible design job a friend and I could get.
