@@ -41,7 +41,6 @@ $(document).ready(function() {
                 
                 if ($('body').width() < 637) {
                         $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px');
-                        $('.footer').css('position', 'absolute').css('bottom', '0px');
                         
                         if ($('html').height() < 611) {
                                 $('.footer').css('position', '').css('bottom', '');
@@ -56,16 +55,14 @@ $(document).ready(function() {
                 }
                 
                 var i = 0;
-                var navwidth = String(Math.round($('#linkone').width()+$('#linktwo').width()+$('#linkthree').width()+60))+'px';
                 var ratio = 2.625;
                 var height = String(Math.round($('.content').width()/ratio))+'px';
                 var m = setInterval(function() {
                         if (i < 2) {
                                 height = String(Math.round($('.content').width()/ratio))+'px';
                                 $('.content').css('height', height);
-                                $('.wrapper').css('width', $('wrapper').width()).css('min-height', String(Math.round($('.header').height()+$('nav').height()+$('.content').height()+$('.information').height()+$('.footer').height()+100))+'px');
-                                navwidth = String(Math.round($('#linkone').width()+$('#linktwo').width()+$('#linkthree').width()+80))+'px';
-                                $('nav').css('width', navwidth);
+                                $('.wrapper').css('width', $('wrapper').width());
+                                
                                 i++;
                         }
                         else {
