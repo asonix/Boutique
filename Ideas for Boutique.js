@@ -40,10 +40,9 @@ $(document).ready(function() {
                 $('head').append('<link href="Ideas for Boutique.css" type="text/css" rel="stylesheet"/>')
                 
                 if ($('body').width() < 637) {
-                        $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px');
+                        $('.wrapper').css('width', '100%').css('margin-bottom', '30px').css('margin-top', '0px');
                         
                         if ($('html').height() < 611) {
-                                $('.footer').css('position', '').css('bottom', '');
                                 $('.wrapper').css('height', '');
                                 $('.formalities').css('position', 'absolute');
                         }
@@ -51,7 +50,6 @@ $(document).ready(function() {
                 
                 else {
                         $('.wrapper').css('width', '80%').css('height', '').css('margin-top','4%');
-                        $('.footer').css('position', '').css('bottom', '');
                 }
                 
                 var i = 0;
@@ -77,11 +75,9 @@ $(document).ready(function() {
                         $('.wrapper').css('min-height', String(Math.round($('.header').height()+$('nav').height()+$('.content').height()+$('.information').height()+$('.footer').height()+100))+'px');
                         $('.information').css('clear', 'both');
                         if ($('body').width() < 637) {
-                                $('.wrapper').css('width', '100%').css('height', String(Math.round($(window).height()-40))).css('margin-top', '0px');
-                                $('.footer').css('position', 'absolute').css('bottom', '0px');
+                                $('.wrapper').css('width', '100%').css('margin-top', '0px').css('margin-bottom', '30px');
                                 
                                 if ($('html').height() < 611) {
-                                        $('.footer').css('position', 'relative').css('bottom', '');
                                         $('.wrapper').css('height', '');
                                         $('.formalities').css('position', 'absolute');
                                 }
@@ -104,7 +100,6 @@ $(document).ready(function() {
                         
                         else {
                                 $('.wrapper').css('width', '80%').css('height', '').css('margin-top', '4%');
-                                $('.footer').css('position', '').css('bottom', '');
                                 $('.formalities').css('position', 'fixed');
                                 $('.header').css('float', '').css('margin-top', '').css('margin-left', '');
                                 $('.content').css('float', '').css('margin-left', '');
