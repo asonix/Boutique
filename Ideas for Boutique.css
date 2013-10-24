@@ -90,7 +90,7 @@ nav {
     margin-top: 0px;
     width: 90%;
     max-width: 630px;
-    max-height: 240px;
+    height:auto;
     background-image: url('repeat.png');
 	background-repeat: repeat;
     /*background-color: #ffffff;*/
@@ -149,4 +149,4 @@ footer {
     min-width: 470px;
     z-index: 1;
 }
-img, png {display: inline-block}
+h2 {margin:0px; margin-top:19px;}

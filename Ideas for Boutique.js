@@ -59,8 +59,8 @@ $(document).ready(function() {
                 var height = String(Math.round($('.content').width()/ratio))+'px';
                 var m = setInterval(function() {
                         if (i < 2) {
-                                height = String(Math.round($('.content').width()/ratio))+'px';
-                                $('.content').css('height', height);
+                                /*height = String(Math.round($('.content').width()/ratio))+'px';
+                                $('.content').css('height', height);*/
                                 $('.wrapper').css('width', $('wrapper').width());
                                 
                                 i++;
@@ -112,7 +112,7 @@ $(document).ready(function() {
                         }
                         
                         height = String(Math.round($('.content').width()/ratio))+'px';
-                        $('.content').css('height', height);
+                        //$('.content').css('height', height);
                         console.log(height);
                 });
         }
