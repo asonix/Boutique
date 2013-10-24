@@ -32,6 +32,7 @@ body {
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 25px;
+    font-family:  
 }
 .wrapper {
     width: 80%;
@@ -94,7 +95,7 @@ footer {
     height: auto;
     margin-top: 20px;
     padding-top: 20px; padding-bottom:20px;
-    color: #908a85;
+    color: #4e4e4e;
     background-color:#202020;
     text-align: center;
 }
