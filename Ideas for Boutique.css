@@ -96,7 +96,6 @@ article {
     background-image: url('repeat.png');
 	background-repeat: repeat;
     /*background-color: #ffffff;*/
-    border: 1px black dotted;
 }
 .information {
     margin-left: auto;
@@ -179,25 +178,11 @@ h2 {margin:0px; margin-top:19px;}
 input {
 	padding:12px;
 }
+
 .letter {
 	text-align: center;
 }
-
-.name {
-	width: 20%;
-	float:left;
-	margin-left: 30px;
-}
-
-.email {
-	width:30%;
-	float:right;
-	margin-right:30px;
-}
-
-.message {
-	width:90%;
-	padding:12px;
-	margin:0px;
-	margin-top:30px;
-}
+.col1 {display: inline-block; margin:10px; margin-right:auto; right:0px;}
+.col2 {display: inline-block; margin:10px; margin-left:auto; left:0px;}
+input, textarea, button {border-radius: 4px; border: 0px;}
+button {width:171px; padding:12px; height:100%;}
