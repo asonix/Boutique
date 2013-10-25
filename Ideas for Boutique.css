@@ -175,12 +175,42 @@ h2 {margin:0px; margin-top:19px;}
     height: 100%;
 }
 
-input {padding:12px; margin:0; margin-bottom: 5px; margin-top: 5px;}
-textarea {padding:12px; width:169px; height:36; margin:0; margin-top: 5px;}
-.letter {
-	text-align: center;
+input {
+	padding:12px; 
+	margin:0; 
+	margin-bottom: 5px; 
+	margin-top: 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
 }
+	
+textarea {
+	padding:12px; 
+	width:169px; 
+	height:36; 
+	margin:0; 
+	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+}
+	
+.letter {text-align: center;}
+
 .col1 {display: inline-block; right:0px; margin-right: 5px;}
 .col2 {display: inline-block; left:0px; margin-left: 5px;}
-input, textarea, button {border-radius: 4px; border: 0px;}
-button {width:193px; padding:12px; height:100%;}
+
+.row2 {margin-bottom:30px;}
+
+input, 
+textarea, 
+button {
+	border-radius: 4px; 
+	border: 0px;
+}
+
+button {
+	width:193px; 
+	padding:12px; 
+	height:100%;
+	background-color: #202020;
+	color:white;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
