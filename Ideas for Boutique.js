@@ -17,12 +17,13 @@ $(document).ready(function() {
                                 height = String(Math.round($('.content').width()/ratio))+'px';
                                 logofs = String(Math.round($(window).width()/3.11))+'px';
                                 defaultfs = String(Math.round($(window).width()/31.1))+'px';
+                                tfdefaultfs = String(Math.round($(window).width()/31.1*3/4))+'px';
                                 hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
                                 qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
                                 tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
-                                $('.content').css('height', height).css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
+                                $('.content').css('height', 'auto').css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
                                 $('.logo').css('font-size', logofs);
-                                $('html').css('font-size', defaultfs);
+                                $('html').css('font-size', tfdefaultfs);
                                 $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
                                 $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
                                 $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
