@@ -7,32 +7,25 @@
     background-color: #eeabfa;
     color: #554433;
 }
-* {
-    position: relative;
-}
-a:hover {
-    color: #998877;
-}
-a:active {
-    color: #887766;
-}
-a:visited {
-    color: #e5e5e5;
-}
-a:visited:hover {
-    color: #887766;
-}
+
+* {position: relative;}
+a:hover {color: #998877;}
+a:active {color: #887766;}
+a:visited {color: #e5e5e5;}
+a:visited:hover {color: #887766;}
 html {
     background-color: #6b5743;
     font-family: "Fanwood"; /* WE NEED TO LOAD THIS FONT, @FONTFACE */
     color: #202020;
     min-height: 610px;
 }
+
 body {
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 25px;
 }
+
 .wrapper {
     width: 80%;
     height: 100%;
@@ -47,10 +40,7 @@ body {
     background-image: url('repeat.png');
 	background-repeat: repeat;
 }
-.textured {
-	background-image: url('repeat.png');
-	background-repeat: repeat;
-}
+
 header {
     width: auto;
     height: auto;
@@ -59,6 +49,7 @@ header {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
+
 nav {
     margin-top: 10px;
     width: 100%;
@@ -86,28 +77,30 @@ nav {
 	     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
 	        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
-article {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    width: 90%;
-    max-width: 630px;
-    height:auto;
-    background-image: url('repeat.png');
-	background-repeat: repeat;
-    /*background-color: #ffffff;*/
-}
-.information {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 630px;
-    background-image: url('repeat.png');
+
+.textured {
+	background-image: url('repeat.png');
 	background-repeat: repeat;
 }
-.information p {
-    text-align: justify;
-}
+	article {
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0px;
+	    width: 90%;
+	    max-width: 630px;
+	    height:auto;
+	    background-image: url('repeat.png');
+		background-repeat: repeat;
+	}
+	.information {
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 90%;
+	    max-width: 630px;
+	    background-image: url('repeat.png');
+		background-repeat: repeat;
+	}
+	
 footer {
     width: 100%;
     height: auto;
@@ -120,6 +113,7 @@ footer {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+
 .logobg {
     width: auto;
     height: 100%;
@@ -132,16 +126,7 @@ footer {
     font-family: Arial;
     font-size: 200px;
 }
-#gleft {
-    float: left;
-    height: 100%;
-    width: 100px;
-}
-#gright {
-    float: right;
-    height: 100%;
-    width: 100px;
-}
+
 .formalities {
     position: fixed;
     bottom: 5px;
@@ -154,6 +139,10 @@ footer {
     z-index: 1;
 }
 h2 {margin:0px; margin-top:19px;}
+
+
+
+/*LOCATION CSS*/
 
 .flexcont {
     position: relative;
@@ -175,21 +164,9 @@ h2 {margin:0px; margin-top:19px;}
     height: 100%;
 }
 
-input {
-	padding:12px; 
-	margin:0; 
-	margin-bottom: 5px; 
-	margin-top: 5px;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-}
-	
-textarea {
-	padding:12px; padding-bottom: 18px;
-	width:169px; 
-	height:36; 
-	margin:0; 
-	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-}
+
+
+/*CONTACT CSS*/
 	
 .letter {text-align: center;}
 
@@ -205,6 +182,24 @@ button {
 	border: 0px;
 }
 
+textarea {
+	padding:12px; padding-bottom: 18px;
+	width:169px; 
+	height:36; 
+	margin:0; 
+	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+
+input {
+	padding:12px; 
+	margin:0; 
+	margin-bottom: 5px; 
+	margin-top: 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
 button {
 	width:193px; 
 	padding:12px; 
@@ -212,4 +207,17 @@ button {
 	background-color: #202020;
 	color:white;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    -webkit-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+       -moz-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        -ms-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+         -o-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+            transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+	-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	   -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	    -ms-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
+
+button:hover {background-color:#383838;}
