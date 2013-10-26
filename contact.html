@@ -37,16 +37,25 @@
 	            	<form id="letter">
 	            		<div class="row1">
 		            		<div class="col1">
-			            		<input class="name" id="name" value="name" size="30" /><br>
-			            		<input class="email" id="email" value="email" size="30" />
+			            		<input class="name" id="name" value="name" size="30" 
+			            			onfocus="if(this.value == 'name'){this.value = '';}" 
+			            			onblur="if(this.value == ''){this.value='name';}" /><br>
+			            		
+			            		<input class="email" id="email" value="email" size="30" 
+			            			onfocus="if(this.value == 'email'){this.value = '';}"
+			            			onblur="if(this.value == ''){this.value='email';}" />
 		            		</div>
 		            		<div class="col2">
-		            			<textarea class="message" id="message" rows="4" style="margin-bottom:-12px;">message</textarea>
+		            			<textarea class="message" id="message" rows="4" style="margin-bottom:-12px;" 
+		            				onfocus="if(this.value == 'message'){this.value = '';}"
+		            				onblur="if(this.value == ''){this.value='message';}">message</textarea>
 		            		</div>
 	            		</div>
 	            		
 	            		<div class="row2">
-	            			<div class="col1"><input class="subject" id="subject" value="subject" size="30" /></div>
+	            			<div class="col1"><input class="subject" id="subject" value="subject" size="30" 
+	            			onfocus="if(this.value == 'subject'){this.value = '';}"
+	            			onblur="if(this.value == ''){this.value='subject';}" /></div>
 	            			<div class="col2"><button name="submit" size="30">send</button></div>
 	            		</div>
 	            	</form>
