@@ -41,8 +41,9 @@ $(document).ready(function() {
                 $('head').append('<link href="Ideas for Boutique.css" type="text/css" rel="stylesheet"/>')
                 
                 if ($('body').width() < 637) {
-                        $('.wrapper').css('width', '100%').css('margin-bottom', '30px').css('margin-top', '0px');
-                        
+                        $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
+                        $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
+                                
                         if ($('html').height() < 611) {
                                 $('.wrapper').css('height', '');
                                 $('.formalities').css('position', 'absolute');
@@ -76,7 +77,8 @@ $(document).ready(function() {
                         $('.wrapper').css('min-height', String(Math.round($('.header').height()+$('nav').height()+$('.content').height()+$('.information').height()+$('.footer').height()+100))+'px');
                         $('.information').css('clear', 'both');
                         if ($('body').width() < 637) {
-                                $('.wrapper').css('width', '100%').css('margin-top', '0px').css('margin-bottom', '30px');
+                                $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
+                                $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
                                 
                                 if ($('html').height() < 611) {
                                         $('.wrapper').css('height', '');
@@ -101,6 +103,7 @@ $(document).ready(function() {
                         
                         else {
                                 $('.wrapper').css('width', '80%').css('height', '').css('margin-top', '4%');
+                                $('nav').css('position', '').css('top', '').css('width','')
                                 $('.formalities').css('position', 'fixed');
                                 $('.header').css('float', '').css('margin-top', '').css('margin-left', '');
                                 $('.content').css('float', '').css('margin-left', '');
