@@ -37,6 +37,7 @@ sliderPackage {
     position: absolute;
     left: 0px;
     background-color: #e5e5e5;
+    text-align: center;
     height: 420px;
     width: 50px;
     z-index: 2;
@@ -45,6 +46,7 @@ sliderPackage {
     position: absolute;
     left: 690px;
     background-color: #e5e5e5;
+    text-align: center;
     height: 420px;
     width: 50px;
     z-index: 2;
@@ -52,8 +54,7 @@ sliderPackage {
 .button {
     background-color: #554433;
     margin-top: 190px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
