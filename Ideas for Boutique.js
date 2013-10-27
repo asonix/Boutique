@@ -17,12 +17,13 @@ $(document).ready(function() {
                                 height = String(Math.round($('.content').width()/ratio))+'px';
                                 logofs = String(Math.round($(window).width()/3.11))+'px';
                                 defaultfs = String(Math.round($(window).width()/31.1))+'px';
+                                tfdefaultfs = String(Math.round($(window).width()/31.1*3/4))+'px';
                                 hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
                                 qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
                                 tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
-                                $('.content').css('height', height).css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
+                                $('.content').css('height', 'auto').css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
                                 $('.logo').css('font-size', logofs);
-                                $('html').css('font-size', defaultfs);
+                                $('html').css('font-size', tfdefaultfs);
                                 $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
                                 $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
                                 $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
@@ -40,8 +41,9 @@ $(document).ready(function() {
                 $('head').append('<link href="Ideas for Boutique.css" type="text/css" rel="stylesheet"/>')
                 
                 if ($('body').width() < 637) {
-                        $('.wrapper').css('width', '100%').css('margin-bottom', '30px').css('margin-top', '0px');
-                        
+                        $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
+                        $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
+                                
                         if ($('html').height() < 611) {
                                 $('.wrapper').css('height', '');
                                 $('.formalities').css('position', 'absolute');
@@ -75,7 +77,8 @@ $(document).ready(function() {
                         $('.wrapper').css('min-height', String(Math.round($('.header').height()+$('nav').height()+$('.content').height()+$('.information').height()+$('.footer').height()+100))+'px');
                         $('.information').css('clear', 'both');
                         if ($('body').width() < 637) {
-                                $('.wrapper').css('width', '100%').css('margin-top', '0px').css('margin-bottom', '30px');
+                                $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
+                                $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
                                 
                                 if ($('html').height() < 611) {
                                         $('.wrapper').css('height', '');
@@ -100,6 +103,7 @@ $(document).ready(function() {
                         
                         else {
                                 $('.wrapper').css('width', '80%').css('height', '').css('margin-top', '4%');
+                                $('nav').css('position', '').css('top', '').css('width','')
                                 $('.formalities').css('position', 'fixed');
                                 $('.header').css('float', '').css('margin-top', '').css('margin-left', '');
                                 $('.content').css('float', '').css('margin-left', '');
